@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bolder;
+  color: #000;
+}
+
+.search-bar {
+  flex-grow: 1;
+  margin: 0 20%;
+}
+
+.rs-input-group {
+  border-radius: 50px !important; /* Make the input group oval */
+  overflow: hidden;
+}
+
+.rs-input-group .rs-input {
+  padding: 2% 3% !important;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+}
+
+.cart {
+  position: relative;
+  font-size: 24px;
+  color: #000;
+  margin-left: 2%;
+}

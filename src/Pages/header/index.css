@@ -1,39 +1,91 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 20px;
+  border-radius: 10px;
+  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
 }
 
 .logo {
   font-size: 24px;
   font-weight: bolder;
   color: #000;
+  padding-right: 10%;
 }
 
 .search-bar {
   flex-grow: 1;
-  margin: 0 20%;
+  margin: 0 5%;
+  display: flex;
+  justify-content: center;
 }
 
 .rs-input-group {
   border-radius: 50px !important; /* Make the input group oval */
   overflow: hidden;
+  width: 100%;
+  max-width: 500px;
 }
 
 .rs-input-group .rs-input {
-  padding: 2% 3% !important;
+  padding: 2% 2% !important;
+  padding: 10px 20px !important;
+}
+
+.rs-input-group .rs-input-group-addon {
+  border-radius: 50px !important; /* Make the addon match the input shape */
+  background: transparent !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu {
   display: flex;
-  gap: 20px;
-  font-size: 16px;
+  gap: 50px;
+  font-size: 18px;
+}
+
+.signin_button {
+  margin-left: 15px !important; /* Ensure it aligns well with other menu items */
+}
+
+.rs-btn-icon {
+  background-color: transparent !important;
+  font-size: 18px !important;
+  padding: 0 0 5px 20px !important;
 }
 
 .cart {
-  position: relative;
+  display: relative;
   font-size: 24px;
   color: #000;
-  margin-left: 2%;
+  padding-left: 2%;
+}
+
+.menu div {
+  position: relative;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/*Animation*/
+.menu div::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  background-color: #000;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.menu div:hover {
+  transform: scale(1.2);
+}
+
+.menu div:hover::after {
+  width: 100%;
+  left: 0;
 }

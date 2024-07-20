@@ -22,7 +22,9 @@ const Header = () => {
         <div>Why Us</div>
       </div>
       <div className="signin_button">
-        <IconButton icon={<RiUser3Fill />}>SignIn</IconButton>
+        <IconButton icon={<RiUser3Fill />}>
+          <span className="icon-text">SignIn</span>
+        </IconButton>
       </div>
 
       <div className="cart">

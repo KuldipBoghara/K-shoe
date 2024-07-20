@@ -69,6 +69,10 @@
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
+.icon-text {
+  margin-left: 5px; /* Adjust the value to control the spacing */
+}
+
 /*Animation*/
 .menu div::after {
   content: '';
